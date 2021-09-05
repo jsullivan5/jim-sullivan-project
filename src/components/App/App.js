@@ -7,6 +7,7 @@ import AppBar from '../AppBar/AppBar';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import Test from '../test';
+import guitars from '../../data/guitars';
 
 import './App.css';
 
@@ -15,7 +16,7 @@ function App() {
 		<Router>
     	<AppBar />
 			<Hero />
-			<Test />
+			<Test itemType="guitars" items={guitars} />
 			{/* <main>
 				<Switch>
 					<Route exact path="/">
