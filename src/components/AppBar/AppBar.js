@@ -30,10 +30,6 @@ const useStyles = makeStyles((theme) => ({
 const navLinkData = [
 	{
 		path: '/',
-		btnText: 'About',
-	},
-	{
-		path: '/guitars',
 		btnText: 'Guitars',
 	},
 	{
@@ -43,6 +39,10 @@ const navLinkData = [
 	{
 		path: '/misc',
 		btnText: 'Misc.',
+	},
+	{
+		path: '/about',
+		btnText: 'About',
 	},
 	{
 		path: '/contact',
@@ -60,7 +60,7 @@ const TopBar = () => {
 				{navLinkData.map(navLink => (
 					<NavLink
 						key={`navigation-${navLink.btnText}`}
-						exact to={navLink.path}
+						to={navLink.path}
 						className={classes.navLink}
 						activeStyle={activeStyle}
 					>

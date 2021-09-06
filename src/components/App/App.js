@@ -2,28 +2,25 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
+	Redirect
 } from "react-router-dom";
 import AppBar from '../AppBar/AppBar';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
-import Test from '../test';
+import CardContent from '../CardContent/CardContent';
 import guitars from '../../data/guitars';
 
 import './App.css';
 
 function App() {
   return (
-		<Router>
+		<Router basename={'/the-jim-sullivan-project/index.html'}>
     	<AppBar />
 			<Hero />
-			<Test itemType="guitars" items={guitars} />
-			{/* <main>
+			<main>
 				<Switch>
 					<Route exact path="/">
-						<h1>About</h1>
-					</Route>
-					<Route exact path="/guitars">
-						<h1>Guitars</h1>
+						<CardContent itemType="guitars" items={guitars} />
 					</Route>
 					<Route exact path="/amplifiers">
 						<h1>Amplifiers</h1>
@@ -31,11 +28,14 @@ function App() {
 					<Route exact path="/misc">
 						<h1>Misc</h1>
 					</Route>
+					<Route exact path="/about">
+						<h1>About</h1>
+					</Route>
 					<Route exact path="/contact">
 						<h1>Contact</h1>
 					</Route>
 				</Switch>
-			</main> */}
+			</main>
 			<Footer />
 		</Router>
   );
