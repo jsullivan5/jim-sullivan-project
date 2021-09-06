@@ -29,12 +29,13 @@ const useStyles = makeStyles((theme) => ({
 
 export default function Album({ itemType, items }) {
   const classes = useStyles();
+	const alphabetizedItems = items.sort((a, b) => (a.make > b.make) ? 1 : (a.make === b.make) ? ((a.model > b.model) ? 1 : -1) : -1 )
 
   return (
     <React.Fragment>
 			<Container className={classes.cardGrid} maxWidth="xl">
 				<Grid container spacing={4}>
-					{items.map((item, i) => (
+					{alphabetizedItems.map((item, i) => (
 						<Grid item key={i} xs={6} sm={6} md={4}>
 							<Card className={classes.card}>
 								<CardMedia
