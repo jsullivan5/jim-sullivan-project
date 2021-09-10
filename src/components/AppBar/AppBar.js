@@ -5,6 +5,7 @@ import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import Typography from '@material-ui/core/Typography';
 import Avatar from '@material-ui/core/Avatar';
+import logo from './jim-logo.png';
 
 const activeStyle = {
 	textDecoration: 'underline',
@@ -56,7 +57,7 @@ const TopBar = () => {
   return (
 		<AppBar className={classes.root} position="static">
 			<Toolbar>
-				<Avatar className={classes.logo} alt="JS" src="./jim-logo.png" />
+				<Avatar className={classes.logo} alt="JS" src={logo}/>
 				{navLinkData.map(navLink => (
 					<NavLink
 						key={`navigation-${navLink.btnText}`}

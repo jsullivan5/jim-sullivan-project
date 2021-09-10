@@ -4,6 +4,20 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import { withRouter } from 'react-router';
+
+const notAboutText = `
+	To honor my late Father's musical legacy, our family wants to give real musicians the chance to buy pieces from 
+	his beloved instrument collection before we let them go to an auction house.
+	Our family would love to see his musical legacy preserved by getting these instruments on stage.  We would rather offer 
+	these treasures to musicians with a discount than pay a fee to a faceless broker or estate sale commmission.  If you see
+	anything you like, fill out a contact form and we will get back to you via email. 
+`
+
+const aboutText = `
+	Jim (1955-2021) played guitar his whole life.  Music always filled his home.  He listened to everything
+	from Yngwie Malmstein to Joni Mitchel.  But when he played, it was blues and metal...
+`
 
 const useStyles = makeStyles((theme) => ({
   heroContent: {
@@ -15,9 +29,9 @@ const useStyles = makeStyles((theme) => ({
   },
 }));
 
-export default function Album() {
+const Hero = ({ location }) => {
   const classes = useStyles();
-
+	console.log(location)
   return (
 		<div className={classes.heroContent}>
 			<Container maxWidth="lg">
@@ -25,9 +39,11 @@ export default function Album() {
 					The Jim Sullivan Project
 				</Typography>
 				<Typography variant="h5" align="center" color="textSecondary" paragraph>
-					To honor my late Father's musical legacy, our family wants to give real musicians the chance to buy pieces from 
-					his beloved instrument collection before we let them go to an auction house.
-					Our family would love to see his musical legacy preserved by getting these instruments on stage.
+					{location  && (location.pathname === '/about') ?
+						aboutText :
+						notAboutText
+						// TODO: this is janky but I made it quickly
+					}
 				</Typography>
 				<div className={classes.heroButtons}>
 					<Grid container spacing={2} justifyContent="center">
@@ -47,3 +63,5 @@ export default function Album() {
 		</div>
   );
 }
+
+export default withRouter(Hero);

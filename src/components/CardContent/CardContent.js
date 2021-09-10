@@ -21,7 +21,7 @@ const useStyles = makeStyles((theme) => ({
   },
   cardMedia: {
     paddingTop: '1080px',
-		height: '108opx%',
+		height: '1080px',
 		width: '100%',
 		objectFit: 'cover'
   },

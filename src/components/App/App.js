@@ -2,12 +2,12 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-	Redirect
 } from "react-router-dom";
 import AppBar from '../AppBar/AppBar';
 import Hero from '../Hero/Hero';
 import Footer from '../Footer/Footer';
 import CardContent from '../CardContent/CardContent';
+import About from '../About/About';
 import guitars from '../../data/guitars';
 
 import './App.css';
@@ -29,7 +29,7 @@ function App() {
 						<h1>Misc</h1>
 					</Route>
 					<Route exact path="/about">
-						<h1>About</h1>
+						<About />
 					</Route>
 					<Route exact path="/contact">
 						<h1>Contact</h1>
