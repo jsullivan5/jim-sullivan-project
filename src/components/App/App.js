@@ -9,6 +9,8 @@ import Footer from '../Footer/Footer';
 import CardContent from '../CardContent/CardContent';
 import About from '../About/About';
 import guitars from '../../data/guitars';
+import amps from '../../data/amps';
+import misc from '../../data/misc';
 
 import './App.css';
 
@@ -24,9 +26,11 @@ function App() {
 					</Route>
 					<Route exact path="/amplifiers">
 						<h1>Amplifiers</h1>
+						<CardContent itemType="amps" items={amps} />
 					</Route>
 					<Route exact path="/misc">
 						<h1>Misc</h1>
+						<CardContent itemType="misc" items={misc} />	
 					</Route>
 					<Route exact path="/about">
 						<About />
