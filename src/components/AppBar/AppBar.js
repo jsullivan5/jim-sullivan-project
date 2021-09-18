@@ -64,6 +64,7 @@ const TopBar = () => {
 						to={navLink.path}
 						className={classes.navLink}
 						activeStyle={activeStyle}
+						exact
 					>
 					<Typography variant="h6" className={classes.title}>
 						{navLink.btnText}
