@@ -16,12 +16,12 @@ const gretsch = 'Gretsch';
 const prs = 'Paul Reed Smith';
 
 const guitarData = [
-	{
-		make: martin,
-		model: makeUnkown,
-		description: 'Full body acoustic, not electric',
-		imageName: 'martin_full_body.jpeg'
-	},
+	// {
+	// 	make: martin,
+	// 	model: makeUnkown,
+	// 	description: 'Full body acoustic, not electric',
+	// 	imageName: 'martin_full_body.jpeg'
+	// },
 	// {
 	// 	make: 'Danelectric',
 	// 	model: makeUnkown,
@@ -58,12 +58,12 @@ const guitarData = [
 	// 	description: 'Made of glass',
 	// 	imageName: 'bad_cat_glass.jpeg'
 	// },
-	{
-		make: gibson,
-		model: 'SG',
-		description: none,
-		imageName: 'gibson_sg_maroon.jpeg'
-	},
+	// {
+	// 	make: gibson,
+	// 	model: 'SG',
+	// 	description: none,
+	// 	imageName: 'gibson_sg_maroon.jpeg'
+	// },
 	{
 		make: fender,
 		model: 'Telecaster',
@@ -172,24 +172,24 @@ const guitarData = [
 		description: 'Eric Calpton signature series',
 		imageName: 'fender_strat_eric_clapton.jpeg'
 	},
-	{
-		make: gretsch,
-		model: makeUnkown,
-		description: 'Hollow body',
-		imageName: 'gretschMaroonHollowbody.jpeg'
-	},
+	// {
+	// 	make: gretsch,
+	// 	model: makeUnkown,
+	// 	description: 'Hollow body',
+	// 	imageName: 'gretschMaroonHollowbody.jpeg'
+	// },
 	{
 		make: 'Jackson',
 		model: makeUnkown,
 		description: none,
 		imageName: 'jacksonGray.jpeg'
 	},
-	{
-		make: schecter,
-		model: makeUnkown,
-		description: none,
-		imageName: 'schecterHollowBodyBlackGold.jpeg'
-	},
+	// {
+	// 	make: schecter,
+	// 	model: makeUnkown,
+	// 	description: none,
+	// 	imageName: 'schecterHollowBodyBlackGold.jpeg'
+	// },
 	{
 		make: epiphone,
 		model: 'G-1275',
@@ -214,30 +214,30 @@ const guitarData = [
 	// 	description: 'Bass guitar',
 	// 	imageName: 'rickenbackerBass.jpeg'
 	// },
-	{
-		make: gibson,
-		model: 'SG Tribute',
-		description: 'There might be 2 of these',
-		imageName: 'gibsonSGTributeWood.jpeg'
-	}, 
-	{
-		make: martin,
-		model: makeUnkown,
-		description: 'Full body no pickup',
-		imageName: 'martin2.jpeg'
-	},
+	// {
+	// 	make: gibson,
+	// 	model: 'SG Tribute',
+	// 	description: 'There might be 2 of these',
+	// 	imageName: 'gibsonSGTributeWood.jpeg'
+	// }, 
+	// {
+	// 	make: martin,
+	// 	model: makeUnkown,
+	// 	description: 'Full body no pickup',
+	// 	imageName: 'martin2.jpeg'
+	// },
 	{
 		make: epiphone,
 		model: 'Les Paul',
 		description: none,
 		imageName: 'epiphone_woodGranLP.jpeg'
 	},
-	{
-		make: gibson,
-		model: 'SG',
-		description: 'With wammy bar',
-		imageName: 'gibsonSGWhammy.jpeg'
-	},
+	// {
+	// 	make: gibson,
+	// 	model: 'SG',
+	// 	description: 'With wammy bar',
+	// 	imageName: 'gibsonSGWhammy.jpeg'
+	// },
 	// {
 	// 	make: gibson,
 	// 	model: 'Les Paul',
@@ -274,12 +274,12 @@ const guitarData = [
 		description: none,
 		imageName: 'fenderStratPurple.jpeg'
 	},
-	{
-		make: fender,
-		model: 'Stratocaster',
-		description: none,
-		imageName: 'fenderStratWhite.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Stratocaster',
+	// 	description: none,
+	// 	imageName: 'fenderStratWhite.jpeg'
+	// },
 	// {
 	// 	make: prs,
 	// 	model: 'Piezo SE',
@@ -340,12 +340,12 @@ const guitarData = [
 		description: none,
 		imageName: 'nylonAcoustic.jpeg'
 	},
-	{
-		make: 'Zager',
-		model: makeUnkown,
-		description: 'Acoustic',
-		imageName: 'zagerAcoustic.jpeg'
-	},
+	// {
+	// 	make: 'Zager',
+	// 	model: makeUnkown,
+	// 	description: 'Acoustic',
+	// 	imageName: 'zagerAcoustic.jpeg'
+	// },
 	// {
 	// 	make: 'Ovation',
 	// 	model: 'Celebrity Elite',
@@ -412,24 +412,24 @@ const guitarData = [
 		description: none,
 		imageName: 'suproDualTone.jpeg'
 	},
-	{
-		make: fender,
-		model: 'Stratocaster',
-		description: none,
-		imageName: 'fenderStratWoodDeep.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Stratocaster',
+	// 	description: none,
+	// 	imageName: 'fenderStratWoodDeep.jpeg'
+	// },
 	// {
 	// 	make: fender,
 	// 	model: 'Stratocaster',
 	// 	description: none,
 	// 	imageName: 'fenderStratWhite3.jpeg'
 	// },
-	{
-		make: fender,
-		model: 'Stratocaster',
-		description: none,
-		imageName: 'stratocasterRed2.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Stratocaster',
+	// 	description: none,
+	// 	imageName: 'stratocasterRed2.jpeg'
+	// },
 	// {
 	// 	make: 'Taylor',
 	// 	model: makeUnkown,
@@ -478,12 +478,12 @@ const guitarData = [
 	// 	description: 'Acoustic',
 	// 	imageName: 'prsAcoustic.jpeg'
 	// },
-	{
-		make: fender,
-		model: 'Stratocaster',
-		description: none,
-		imageName: 'fenderSunburstStrat2.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Stratocaster',
+	// 	description: none,
+	// 	imageName: 'fenderSunburstStrat2.jpeg'
+	// },
 	// {
 	// 	make: "D'Angelico",
 	// 	model: 'Gramercy S',
@@ -520,12 +520,12 @@ const guitarData = [
 		description: none,
 		imageName: 'fenderstratnaturalwood.jpeg'
 	},
-	{
-		make: fender,
-		model: 'Stratpcaster',
-		description: none,
-		imageName: 'stratCream.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Stratpcaster',
+	// 	description: none,
+	// 	imageName: 'stratCream.jpeg'
+	// },
 	// {
 	// 	make: fender,
 	// 	model: 'Telecaster',
@@ -562,12 +562,12 @@ const guitarData = [
 		description: none,
 		imageName: 'telecasterBlackWhite.jpeg'
 	},
-	{
-		make: fender,
-		model: 'Telecaster',
-		description: none,
-		imageName: 'telewooden2.jpeg'
-	},
+	// {
+	// 	make: fender,
+	// 	model: 'Telecaster',
+	// 	description: none,
+	// 	imageName: 'telewooden2.jpeg'
+	// },
 	{
 		make: fender,
 		model: 'Stratocaster',
